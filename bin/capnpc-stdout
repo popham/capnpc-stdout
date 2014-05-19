@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+//process.stdin.setEncoding('hex');
+
+var nSegments = 0;
+var sizes = [];
+var segments = [];
+
+function start(nSegments) {
+    var begin = 4 * (nSegments + 1);
+    begin += begin%8 ? 4 : 0;
+    return begin;
+}
+
+var begin;
+var end;
+var next = [];
+process.stdin.on('readable', function() {
+    var chunk;
+    while (null !== (chunk = process.stdin.read())) {
+        process.stdout.write(chunk);
+    }
+});
