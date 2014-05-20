@@ -1,6 +1,6 @@
 {
   "name": "capnpc-stdout",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Barf Capnproto compiler output to stdout.",
   "main": "index.js",
   "scripts": {
